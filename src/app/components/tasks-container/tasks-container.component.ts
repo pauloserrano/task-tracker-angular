@@ -20,7 +20,13 @@ export class TasksContainerComponent implements OnInit {
 
   public handleToggleReminder(task: Task) {
     task.reminder = !task.reminder
-    this.taskService.updateTask(task.id, task).subscribe(() => {})
+    this.taskService.updateTask(task.id, { reminder: task.reminder }).subscribe()
+  }
+
+  public handleAddTask(task: Omit<Task, "id">) {
+    this.taskService.postTask({...task, id: this.tasks.length + 1 }).subscribe((newTask) => {
+      this.tasks.push(newTask)
+    })
   }
 
   ngOnInit() {

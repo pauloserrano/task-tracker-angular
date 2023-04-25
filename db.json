@@ -1,25 +1,25 @@
 {
   "tasks": [
     {
-      "id": 2,
+      "id": 1,
       "text": "School Meeting",
       "day": "10/01/2024",
-      "reminder": false
+      "reminder": true
     },
     {
-      "id": 3,
+      "id": 2,
       "text": "Groceries",
       "day": "07/02/2024",
       "reminder": true
     },
     {
-      "id": 4,
+      "id": 3,
       "text": "Lorem Ipsum",
       "day": "22/02/2024",
-      "reminder": false
+      "reminder": true
     },
     {
-      "id": 5,
+      "id": 4,
       "text": "Lorem Ipsum",
       "day": "22/02/2024",
       "reminder": true

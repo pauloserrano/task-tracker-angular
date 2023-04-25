@@ -1,9 +1,9 @@
-<li [ngClass]="{ reminder: task?.reminder }" (dblclick)="reminderEmitter(task)">
-  <h3>{{ task?.text }}</h3>
-  <p>{{ task?.day }}</p>
+<li [ngClass]="{ reminder: task.reminder }" (dblclick)="reminderEmitter(task)">
+  <h3>{{ task.text }}</h3>
+  <p>{{ task.day }}</p>
   <fa-icon 
     class="btn-delete" 
     [icon]="deleteIcon"
-    (click)="deleteEmitter(task?.id || 0)"
+    (click)="deleteEmitter(task.id)"
   />
 </li>
