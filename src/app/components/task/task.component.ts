@@ -9,11 +9,17 @@ import { Task } from 'src/app/interfaces/Task';
 })
 
 export class TaskComponent {
-  @Input() task: Task | undefined = undefined
-  @Output() onDelete: EventEmitter<Task["id"]> = new EventEmitter()
   deleteIcon = faTimes
+  
+  @Input() task!: Task
+  @Output() onDelete: EventEmitter<Task["id"]> = new EventEmitter()
+  @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter()
 
   public deleteEmitter(id: Task["id"]){
     this.onDelete.emit(id)
+  }
+
+  public reminderEmitter(task: Task){
+    this.onToggleReminder.emit(task)
   }
 }

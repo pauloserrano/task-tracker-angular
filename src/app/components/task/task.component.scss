@@ -3,6 +3,7 @@ li {
   background-color: #f4f4f4;
   margin: 0.25rem;
   padding: 0.5rem 1.5rem;
+  transition: 50ms ease-out all;
   cursor: pointer;
 
   h3 {
@@ -20,6 +21,14 @@ li {
     color: red;
     font-size: 1.2em;
   }
+
+  h3, p {
+    user-select: none;
+  }
+}
+
+li:not(.reminder) {
+  border-left: 0.25rem solid transparent;
 }
 
 li.reminder {

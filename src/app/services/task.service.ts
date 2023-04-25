@@ -19,4 +19,8 @@ export class TaskService {
   public deleteTask(id: Task["id"]): Observable<Task> {
     return this.http.delete<Task>(`${this.apiURL}/${id}`)
   }
+
+  public updateTask(id: Task["id"], body: Partial<Omit<Task, "id">>): Observable<Task> {
+    return this.http.patch<Task>(`${this.apiURL}/${id}`, body)
+  }
 }

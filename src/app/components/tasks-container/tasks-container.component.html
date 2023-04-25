@@ -3,5 +3,6 @@
     *ngFor="let task of tasks"
     [task]="task"
     (onDelete)="handleDelete(task?.id || 0)"
+    (onToggleReminder)="handleToggleReminder(task)"
   />
 </ul>
