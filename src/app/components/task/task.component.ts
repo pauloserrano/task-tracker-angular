@@ -1,13 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { TASKS } from 'src/app/data/mockTasks';
+import { Task } from 'src/app/interfaces/Task';
 
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.scss']
 })
+
 export class TaskComponent {
-  @Input() task = TASKS[0]
-  faTimes = faTimes
+  @Input() task: Task | undefined = undefined
+  @Output() onDelete: EventEmitter<Task["id"]> = new EventEmitter()
+  deleteIcon = faTimes
+
+  public deleteEmitter(id: Task["id"]){
+    this.onDelete.emit(id)
+  }
 }

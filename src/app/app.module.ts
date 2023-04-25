@@ -1,9 +1,9 @@
+/* MODULES */
 import { NgModule } from "@angular/core"
 import { BrowserModule } from "@angular/platform-browser"
-
-/* MODULES */
 import { AppRoutingModule } from "./app-routing.module"
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from "@angular/common/http";
 
 /* COMPONENTS */
 import { AppComponent } from "./app.component";
@@ -24,9 +24,11 @@ import { TasksContainerComponent } from './components/tasks-container/tasks-cont
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
-  	FontAwesomeModule
+  	FontAwesomeModule,
+		HttpClientModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
+
 export class AppModule { }

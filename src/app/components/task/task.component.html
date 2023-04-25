@@ -1,5 +1,9 @@
 <li>
-  <h3>{{ task.text }}</h3>
-  <p>{{ task.day }}</p>
-  <fa-icon class="btn-delete" [icon]="faTimes"/>
+  <h3>{{ task?.text }}</h3>
+  <p>{{ task?.day }}</p>
+  <fa-icon 
+    class="btn-delete" 
+    [icon]="deleteIcon"
+    (click)="deleteEmitter(task?.id || 0)"
+  />
 </li>

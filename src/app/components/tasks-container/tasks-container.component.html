@@ -2,5 +2,6 @@
   <app-task 
     *ngFor="let task of tasks"
     [task]="task"
+    (onDelete)="handleDelete(task?.id || 0)"
   />
 </ul>
