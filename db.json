@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "name": "Click the Add button to create a new tasks",
+      "name": "Click the Add button to create a new task",
       "description": "",
       "reminder": true
     },
@@ -20,7 +20,7 @@
     },
     {
       "id": 4,
-      "name": "Click the red X to delete a completed task!",
+      "name": "Click the red X to delete a completed task",
       "description": "",
       "reminder": true
     }
