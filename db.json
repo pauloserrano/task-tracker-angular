@@ -2,26 +2,26 @@
   "tasks": [
     {
       "id": 1,
-      "text": "School Meeting",
-      "day": "10/01/2024",
+      "name": "This is where your tasks will be displayed",
+      "description": "",
       "reminder": true
     },
     {
       "id": 2,
-      "text": "Groceries",
-      "day": "07/02/2024",
+      "name": "Click the Add button to create a new tasks",
+      "description": "",
       "reminder": true
     },
     {
       "id": 3,
-      "text": "Lorem Ipsum",
-      "day": "22/02/2024",
+      "name": "Double click a task to mark it as important",
+      "description": "",
       "reminder": true
     },
     {
       "id": 4,
-      "text": "Lorem Ipsum",
-      "day": "22/02/2024",
+      "name": "Click the red X to delete a completed task!",
+      "description": "",
       "reminder": true
     }
   ]

@@ -3,13 +3,14 @@ li {
   background-color: #f4f4f4;
   margin: 0.25rem;
   padding: 0.5rem 1.5rem;
-  transition: 50ms ease-out all;
+  transition: 100ms ease-out all;
   cursor: pointer;
 
   h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 90%;
   }
 
   fa-icon.btn-delete {

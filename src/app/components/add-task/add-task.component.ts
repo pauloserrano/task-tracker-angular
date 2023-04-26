@@ -9,8 +9,8 @@ import { UiService } from 'src/app/services/ui.service';
   styleUrls: ['./add-task.component.scss']
 })
 export class AddTaskComponent {
-  text: string = ""
-  day: string = ""
+  name: string = ""
+  description: string = ""
   reminder: boolean = false
   showAddTask!: boolean
   subscription: Subscription
@@ -25,18 +25,13 @@ export class AddTaskComponent {
   }
 
   public handleSubmit(){
-    if (this.text.length === 0) {
-      return alert("Add text")
+    if (this.name.length === 0) {
+      return alert("Please give your task a name")
     }
-
-    if (this.day.length === 0) {
-      return alert("Add day")
-    }
-
     
     this.onSubmit.emit({
-      text: this.text,
-      day: this.day,
+      name: this.name,
+      description: this.description,
       reminder: this.reminder
     })
 
@@ -44,8 +39,8 @@ export class AddTaskComponent {
   }
 
   public resetForm() {
-    this.text = ""
-    this.day = ""
+    this.name = ""
+    this.description = ""
     this.reminder = false
   }
 }

@@ -1,6 +1,6 @@
 <li [ngClass]="{ reminder: task.reminder }" (dblclick)="reminderEmitter(task)">
-  <h3>{{ task.text }}</h3>
-  <p>{{ task.day }}</p>
+  <h3>{{ task.name }}</h3>
+  <p>{{ task.description }}</p>
   <fa-icon 
     class="btn-delete" 
     [icon]="deleteIcon"
