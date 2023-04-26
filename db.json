@@ -3,26 +3,26 @@
     {
       "id": 1,
       "name": "This is where your tasks will be displayed",
-      "description": "",
+      "description": "They can have descriptions too!",
       "reminder": true
     },
     {
       "id": 2,
       "name": "Click the Add button to create a new task",
       "description": "",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
       "name": "Double click a task to mark it as important",
-      "description": "",
-      "reminder": true
+      "description": "(That green thing on the left)",
+      "reminder": false
     },
     {
       "id": 4,
-      "name": "Click the red X to delete a completed task",
+      "name": "Click the red X to delete a task",
       "description": "",
-      "reminder": true
+      "reminder": false
     }
   ]
 }
