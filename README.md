@@ -67,7 +67,7 @@ To get a local copy up and running follow the steps below.
    ```sh
    npm run mock:server
    ```
-4. Run the application
+4. Open another terminal and run the application
    ```sh
    ng serve
    ```
